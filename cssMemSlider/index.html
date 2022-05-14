@@ -1,61 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>cssMemSlider</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>cssMemSlider</title>
 </head>
 <body>
 
-	<article>
-		<div class="slides">
-				<div class="img"><img src="./img/1.jpg" alt="images"></div>
-				<div class="img"><img src="./img/2.jpg" alt="images"></div>
-				<div class="img"><img src="./img/3.jpg" alt="images"></div>
-				<div class="img"><img src="./img/4.jpg" alt="images"></div>
-				<div class="img"><img src="./img/5.jpg" alt="images"></div>
-		</div>
+  <article class="slider">
 
-		<div class="wrapper">
-			<div class="text">
-				<h4>-Ребята я наконец  придумал как нам выбраться из этого болота, нам нужно развиваться,
-					изучать Java Script и стать разработчиками, я слышал есть RS School, идем туда,
-					 вечером по расписанию лекция.<br>-Ураааааа!!!
-			   </h4>
-
-			   <h4> -Всем привет, я преподаватель курса и сегодня я здесь, чтобы просветить вас о том, 
-				что такое DOM Events, DOM Api и как сделать адаптивную верстку.<br>-Ооооооо!
-			</h4>
-
-			<h4>
-				-Парни, они опять нам задали какое-то сложное алгоритмическое задание, никак не получается его решить, 
-				может да ну ее эту учебу?
-			</h4>
-
-			<h4>
-				-Я сделаю этот таск во чтобы то мне это не стало, я должен написать этот ниндзя код!
-			</h4>
-
-			<h4>
-				-Я прошел этот курс и стал настоящим Front-end разработчиком, а ты сможешь?
-			</h4>
+    <input type="radio" name="page" id="slide1" checked>
+    <input type="radio" name="page" id="slide2">
+    <input type="radio" name="page" id="slide3">
+    <input type="radio" name="page" id="slide4">
+    <input type="radio" name="page" id="slide5">
+    
 	
-			</div>
+	<div class="photo">
+      <div class="image photo1"></div>
+      <div class="image photo2"></div>
+      <div class="image photo3"></div>
+      <div class="image photo4"></div>
+      <div class="image photo5"></div>
+    </div>
 
-		
 
-			<div class="buttons">
-				<input id="slide1" type="radio" checked name="page">
-				<input id="slide2" type="radio" name="page" >
-				<input type="radio" name="page" >
-				<input type="radio" name="page" >
-				<input type="radio" name="page" >
-			</div>
-		</div>
 
-	</article>
+    <div class="textcontent">
+
+      <h4 >
+		  -Ребята я наконец  придумал как нам выбраться из этого болота, нам нужно развиваться,
+		изучать Java Script и стать разработчиками, я слышал есть RS School, идем туда,
+		 вечером по расписанию лекция.<br>-Ураааааа!!!
+		</h4>
+
+      <h4 >
+		   -Всем привет, я преподаватель курса и сегодня я здесь, чтобы просветить вас о том, 
+		что такое DOM Events, DOM Api и как сделать адаптивную верстку.<br>-Ооооооо!
+	</h4>
+
+      <h4 >
+		  -Парни, они опять нам задали какое-то сложное алгоритмическое задание, никак не получается его решить, 
+		может да ну ее эту учебу?
+	</h4>
+
+      <h4 >
+		  -Я сделаю этот таск во чтобы то мне это не стало, я должен написать этот ниндзя код!
+		</h4>
+
+	  <h4>
+		-Я прошел этот курс и стал настоящим Front-end разработчиком, а ты сможешь?
+	</h4>
+      
+    </div>
+
+
+    <div class="nextslide">
+
+      <label class="page page-1" for="slide1">
+        <span class="pagespan"></span>
+      </label>
+
+      <label class="page page-2" for="slide2">
+        <span class="pagespan"></span>
+      </label>
+
+      <label class="page page-3" for="slide3">
+        <span class="pagespan"></span>
+      </label>
+
+      <label class="page page-4" for="slide4">
+        <span class="pagespan"></span>
+      </label>
+
+      <label class="page page-5" for="slide5">
+        <span class="pagespan"></span>
+      </label>
+
+    </div>
+
+    </article>
 	
 </body>
 </html>
